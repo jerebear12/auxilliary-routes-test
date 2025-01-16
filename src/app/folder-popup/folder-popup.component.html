@@ -1,0 +1,24 @@
+<div class="cdk-overlay-container">
+    <div class="overlay-backdrop" (click)="closePopup()"></div>
+    <div class="global-overlay-wrapper">
+        <div class="cdk-overlay-pane">
+            <div class="dialog-container">
+                <main class="inner-body">
+                    <div class="left-panel">
+                        <ul>
+                            <li [routerLink]="['', { outlets: { popup: ['media'] } }]" [skipLocationChange]="true" routerLinkActive="active">
+                                Media
+                            </li>
+                            <li [routerLink]="['', { outlets: { popup: ['folder'] } }]" [skipLocationChange]="true" routerLinkActive="active">
+                                Folder
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="route-panel">
+                        <router-outlet></router-outlet>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+<p>direct-messages works!</p>
+
+<div class="nav">
+    <!-- <a [routerLink]="[{ outlets: { directPopup: ['direct-folder'] } }]" [skipLocationChange]="true" routerLinkActive="active">Media</a>
+    <a [routerLink]="[this.router.url, { outlets: { directPopup: ['direct-folder'] } }]" routerLinkActive="active">Folder</a> -->
+    <button (click)="changeRoute()">Open Popup</button>
+</div>
+<router-outlet></router-outlet>
+<router-outlet name="directPopup" />
