@@ -12,6 +12,6 @@ export class MediaPopupComponent {
     constructor(private router: Router) { }
 
     closePopup(): void {
-        this.router.navigate([this.router.url.slice(1, this.router.url.lastIndexOf('/'))], { skipLocationChange: true });
+        this.router.navigate([{ outlets: { popup: null } }], { skipLocationChange: true });
     }
 }

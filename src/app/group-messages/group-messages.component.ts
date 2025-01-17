@@ -1,4 +1,3 @@
-import { group } from '@angular/animations';
 import { Component } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
 
@@ -13,6 +12,7 @@ export class GroupMessagesComponent {
     constructor(private router: Router) { }
 
     changeRoute() {
-        this.router.navigate([this.router.url, { outlets: { groupPopup: ['group-media'] },  }], { skipLocationChange: true })
+        this.router.navigate([{ outlets: { popup: ['media'] } }])
     }
+
 }

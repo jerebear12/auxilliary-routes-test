@@ -1,19 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule, Routes } from '@angular/router';
-import { MediaPopupComponent } from './media-popup.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: MediaPopupComponent
-    }
-];
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [],
   imports: [
-    RouterModule.forChild(routes),
+    RouterModule,
     CommonModule
   ]
 })

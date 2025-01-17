@@ -12,7 +12,7 @@ export class DirectMessagesComponent {
     constructor(public router: Router) { }
 
     changeRoute() {
-        this.router.navigate([this.router.url, { outlets: { directPopup: ['direct-media'] },  }], { skipLocationChange: true })
+        this.router.navigate([this.router.url, { outlets: { popup: ['media'] },  }], { skipLocationChange: false })
     }
 
 }

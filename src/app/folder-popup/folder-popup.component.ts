@@ -13,6 +13,6 @@ export class FolderPopupComponent {
 
     public closePopup(): void {
         // Navigate to clear the 'popup' outlet
-        this.router.navigate([this.router.url.slice(1, this.router.url.lastIndexOf('/'))], { skipLocationChange: true });
+        this.router.navigate([{ outlets: { popup: null } }], { skipLocationChange: true });
     }
 }
